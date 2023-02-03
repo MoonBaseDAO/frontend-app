@@ -1,0 +1,36 @@
+.layout {
+  width: 230px;
+  position: relative;
+  background-color: var(--bg-color);
+  border-right: 1px solid #e3e7f7;
+}
+
+.actions {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle1 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fe4d46;
+  box-shadow: 14px 0 0 0 #fbc023, 28px 0 0 0 #7dd21f;
+}
+
+.circle2 {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #d5d7e3;
+  box-shadow: -6px 0 0 0 #d5d7e3, 6px 0 0 0 #d5d7e3;
+}
+
+.content {
+  padding: 40px;
+}
+
+.categories {
+  margin-top: 50px;
+}

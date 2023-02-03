@@ -1,0 +1,23 @@
+.item {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  margin-bottom: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.item:hover {
+  font-weight: bold;
+}
+
+.item svg {
+  width: 14px;
+  height: 14px;
+  color: currentcolor;
+  margin-right: 10px;
+}
+
+.disabled {
+  color: var(--secondary-color) !important;
+}
