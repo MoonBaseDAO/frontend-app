@@ -14,6 +14,7 @@ const ThemeSwitcher = () => {
   return (
     <Button
       auto
+      color="gradient"
       onClick={handleSwitch}
       icon={isDark ? <SunIcon fill="currentColor" filled /> : <MoonIcon fill="currentColor" filled />}
     />

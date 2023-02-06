@@ -30,7 +30,7 @@ const WalletButton = () => {
   }
 
   return (
-    <Button onPress={handleConnect} auto>
+    <Button color="gradient" onPress={handleConnect} auto>
       {isConnected ? accountId : 'Connect'}
     </Button>
   )
