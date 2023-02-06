@@ -11,7 +11,7 @@ const Header = () => {
         <Logo />
         <Text b color="inherit">MoonBase</Text>
       </Navbar.Brand>
-      <Navbar.Content enableCursorHighlight hideIn="xs" variant="highlight">
+      <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline-rounded">
         <Navbar.Link isActive href="#">Home</Navbar.Link>
         <Navbar.Link href="#">Bounties Area</Navbar.Link>
         <Navbar.Link href="#">Actions</Navbar.Link>
