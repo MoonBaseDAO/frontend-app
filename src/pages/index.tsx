@@ -32,7 +32,6 @@ const CardMockItem = ({ name }: { name: string }) => {
       </Card.Body>
       <Card.Footer>
         <Link
-          icon
           color="primary"
           target="_blank"
           href="https://github.com/nextui-org/nextui"
@@ -58,10 +57,10 @@ const CardsMockLayout = () => {
         Card
       </Text>
       <Grid.Container gap={2} justify="center">
-        <Grid xs={3}><CardMockItem name="DAO1" /></Grid>
-        <Grid xs={3}><CardMockItem name="DAO2" /></Grid>
-        <Grid xs={3}><CardMockItem name="DAO3" /></Grid>
-        <Grid xs={3}><CardMockItem name="DAO3" /></Grid>
+        <Grid xs><CardMockItem name="DAO1" /></Grid>
+        <Grid xs><CardMockItem name="DAO2" /></Grid>
+        <Grid xs><CardMockItem name="DAO3" /></Grid>
+        <Grid xs><CardMockItem name="DAO3" /></Grid>
       </Grid.Container>
     </>
   );
@@ -80,28 +79,28 @@ const CheckBoxMockLayout = () => {
       >
         CheckBox
       </Text>
-      <Grid.Container gap={2} direction="row">
-        <Checkbox color="primary" defaultSelected>
+      <Grid.Container gap={2} direction="column" wrap="wrap">
+        <Checkbox color="primary">
           Primary
         </Checkbox>
         <Spacer />
-        <Checkbox color="secondary" defaultSelected>
+        <Checkbox color="secondary">
           Secondary
         </Checkbox>
         <Spacer />
-        <Checkbox color="success" defaultSelected>
+        <Checkbox color="success">
           Success
         </Checkbox>
         <Spacer />
-        <Checkbox color="warning" defaultSelected>
+        <Checkbox color="warning">
           Warning
         </Checkbox>
         <Spacer />
-        <Checkbox color="error" defaultSelected>
+        <Checkbox color="error">
           Error
         </Checkbox>
         <Spacer />
-        <Checkbox color="gradient" defaultSelected>
+        <Checkbox color="gradient">
           Gradient
         </Checkbox>
       </Grid.Container>
@@ -123,7 +122,7 @@ const ProgressBarMockLayout = () => {
       >
         Progress Bar
       </Text>
-      <Grid.Container xs={12} sm={6} gap={2}>
+      <Grid.Container gap={2}>
         <Grid>
           <Progress value={50} color="primary" />
         </Grid>
@@ -160,7 +159,7 @@ const RadioMockLayout = () => {
       >
         Radio Button
       </Text>
-      <Radio.Group defaultValue="primary" orientation="horizontal">
+      <Radio.Group defaultValue="primary" orientation="vertical">
         <Radio value="primary" color="primary" labelColor="primary">
           primary
         </Radio>
@@ -232,12 +231,10 @@ const ButtonMockLayout = () => {
 
 export default function Home() {
   return (
-    <Container css={{ pt: '20px' }}>
+    <Container css={{paddingTop: "20px"}}>
       <CardsMockLayout />
       <Spacer />
       <CheckBoxMockLayout />
-      <Spacer />
-      <ProgressBarMockLayout />
       <Spacer />
       <RadioMockLayout />
       <Spacer />
