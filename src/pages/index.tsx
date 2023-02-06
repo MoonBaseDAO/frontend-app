@@ -28,57 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        {user ?
-          <>
-            <div className={styles.description}>
-              <p>Welcome {user}</p>
-            </div>
-            <div className="layoutModal">
-              <Navbar />
-              <Content categories={categories} />
-              <Sidebar notifications={10} />
-            </div>
-            <div className={styles.grid}>
-              <a onClick={() => { signOut(); setUser(null) }} href="javascript:" className={styles.card}>
-                <h2 className={inter.className}>Sign Out</h2>
-                <p className={inter.className}>Sign out the user</p>
-              </a>
-            </div>
-          </> :
-          <>
-            <div className={styles.description}>
-              <p>You have to sign in first to use the features of this app.</p>
-            </div>
-            <div className={styles.grid}>
-              <a onClick={() => { signIn() }} href="javascript:" className={styles.card}>
-                <h2 className={inter.className}>Sign In</h2>
-                <p className={inter.className}>Sign In with Near Wallet</p>
-              </a>
-            </div>
-          </>
-        }
-
-
+        
       </main>
     </>
   )
