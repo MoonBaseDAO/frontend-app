@@ -1,6 +1,7 @@
 import { Navbar, Button, Text } from "@nextui-org/react";
 import Logo from './logo';
 import Link from "next/link";
+import ThemeSwitcher from "@/components/theme-switcher";
 
 const Header = () => {
   return (
@@ -16,6 +17,9 @@ const Header = () => {
         <Navbar.Link href="#">Actions</Navbar.Link>
       </Navbar.Content>
       <Navbar.Content>
+        <Navbar.Item>
+          <ThemeSwitcher />
+        </Navbar.Item>
         <Navbar.Item>
           <Button auto>
             Connect
