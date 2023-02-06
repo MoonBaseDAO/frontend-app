@@ -1,13 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import { wallet } from '@/near/near-setup'
 import styles from '@/styles/Home.module.css'
+import { Inter } from '@next/font/google'
+import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import { signIn, signOut, wallet } from '@/near/near-setup'
-import { Navbar } from '@/components/navbar'
-import { Content } from '@/components/content'
-import { Sidebar } from '@/components/sidebar'
-import { categories } from '@/mock'
 
 const inter = Inter({ subsets: ['latin'] })
 
