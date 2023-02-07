@@ -1,5 +1,5 @@
 import ThemeSwitcher from "@/components/theme-switcher";
-import WalletButton from "@/components/wallet-button";
+import WalletButton from "@/components/login-button";
 import { Link, Navbar, Text } from "@nextui-org/react";
 import Logo from './logo';
 

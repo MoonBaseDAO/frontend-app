@@ -1,6 +1,6 @@
 import { IconProps } from "../type";
 
-export const StarIcon = ({
+export const UserIcon = ({
   fill = 'currentColor',
   filled,
   size,
