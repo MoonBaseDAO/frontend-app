@@ -1,7 +1,7 @@
 import { Button, useTheme } from '@nextui-org/react';
 import { useTheme as useNextTheme } from 'next-themes';
-import { MoonIcon } from '../icons/icon-moon';
-import { SunIcon } from '../icons/icon-sun';
+import { MoonIcon } from '../icons/moon';
+import { SunIcon } from '../icons/sun';
 
 const ThemeSwitcher = () => {
   const { setTheme } = useNextTheme();

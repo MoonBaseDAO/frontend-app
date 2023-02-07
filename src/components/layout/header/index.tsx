@@ -5,23 +5,25 @@ import Logo from './logo';
 
 const Header = () => {
   const collapseItems = [
-    "Home",
-    "Bounties",
-    "Actions",
+    "Inbox",
+    "Today",
+    "Upcoming",
+    "Important",
+    "Meetings",
+    "Trash",
+    "Family",
+    "Vacation",
+    "Festival",
+    "Concerts"
   ];
 
   return (
-    <Navbar maxWidth="fluid" variant="floating">
+    <Navbar maxWidth="fluid" variant="sticky">
       <Navbar.Brand>
         <Navbar.Toggle showIn="xs" aria-label="toggle navigation" />
         <Logo />
-        <Text b color="inherit" hideIn="xs">MoonBase</Text>
+        <Text h3 b color="secondary" hideIn="xs">MoonBase</Text>
       </Navbar.Brand>
-      <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline-rounded">
-        <Navbar.Link isActive href="#">Home</Navbar.Link>
-        <Navbar.Link href="#">Bounties</Navbar.Link>
-        <Navbar.Link href="#">Actions</Navbar.Link>
-      </Navbar.Content>
       <Navbar.Content>
         <Navbar.Item>
           <ThemeSwitcher />
