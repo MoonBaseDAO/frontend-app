@@ -44,6 +44,13 @@ const HomeLayout = () => {
               </Table.Row>
             )}
           </Table.Body>
+          <Table.Pagination
+            shadow
+            noMargin
+            align="center"
+            rowsPerPage={3}
+            onPageChange={(page) => console.log({ page })}
+          />
         </Table>
         <Spacer />
         <Text b h3 css={{ p: '$3' }}>Upcoming Tasks</Text>
@@ -77,6 +84,13 @@ const HomeLayout = () => {
               </Table.Row>
             )}
           </Table.Body>
+          <Table.Pagination
+            shadow
+            noMargin
+            align="center"
+            rowsPerPage={3}
+            onPageChange={(page) => console.log({ page })}
+          />
         </Table>
       </Card.Body>
     </Card>
