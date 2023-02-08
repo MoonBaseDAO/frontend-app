@@ -1,7 +1,7 @@
 # moonbase.app
 a web3 crm with focus on dao tooling
 
-[](https://media.discordapp.net/attachments/1047007258237743165/1072917932386029628/image.png?width=1385&height=587)
+![](https://media.discordapp.net/attachments/1047007258237743165/1072917932386029628/image.png?width=1385&height=587)
 
 # Getting Started
 
