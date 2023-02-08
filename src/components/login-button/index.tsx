@@ -63,7 +63,6 @@ const LoginButton = () => {
         </Dropdown.Item> */}
         <Dropdown.Item
           key="Near"
-          description="Authenticate with Near Wallet"
           icon={
             <UserIcon size={22} fill="var(--nextui-colors-secondary)" />
           }
