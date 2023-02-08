@@ -42,10 +42,10 @@ const LoginButton = () => {
     // </Button>
     <Dropdown>
       <Dropdown.Button flat color="gradient" css={{color: "white"}}>
-        Login
+        {isConnected ? accountId : 'Login'}
       </Dropdown.Button>
       <Dropdown.Menu onAction={handleLogin} color="secondary" aria-label="Actions" css={{ $$dropdownMenuWidth: "280px" }}>
-        <Dropdown.Item
+        {/* <Dropdown.Item
           key="email"
           description="Login with Email"
           icon={<UserIcon size={22} fill="var(--nextui-colors-secondary)" />}
@@ -60,15 +60,15 @@ const LoginButton = () => {
           }
         >
           MetaMask
-        </Dropdown.Item>
+        </Dropdown.Item> */}
         <Dropdown.Item
           key="Near"
-          description="Login with Near Wallet"
+          description="Authenticate with Near Wallet"
           icon={
             <UserIcon size={22} fill="var(--nextui-colors-secondary)" />
           }
         >
-          Near Wallet
+          {isConnected ? 'SignOut' : 'Near Wallet'}
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
