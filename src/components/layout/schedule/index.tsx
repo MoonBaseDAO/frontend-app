@@ -7,8 +7,8 @@ const ScheduleLayout = () => {
     <Card>
       <Card.Body>
         <Text h3>Schedule</Text>
-        {meetings.map((meeting) => {
-          return <ScheduleCard startTime={meeting.startTime} endTime={meeting.endTime} title={meeting.title} users={meeting.users} />
+        {meetings.map((meeting, index) => {
+          return <ScheduleCard key={index} startTime={meeting.startTime} endTime={meeting.endTime} title={meeting.title} users={meeting.users} />
         })}
       </Card.Body>
     </Card>

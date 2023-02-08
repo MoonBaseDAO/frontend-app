@@ -34,10 +34,10 @@ const HomeLayout = () => {
             )}
           </Table.Header>
           <Table.Body items={tasks}>
-            {(task: TaskType) => (
-              <Table.Row>
+            {(task: TaskType, index: number) => (
+              <Table.Row key={index}>
                 {(columnKey) => (
-                  <Table.Cell>
+                  <Table.Cell key={columnKey}>
                     {renderHomeTableCell(task, columnKey)}
                   </Table.Cell>
                 )}
@@ -74,10 +74,10 @@ const HomeLayout = () => {
             )}
           </Table.Header>
           <Table.Body items={tasks}>
-            {(task: TaskType) => (
-              <Table.Row>
+            {(task: TaskType, index: number) => (
+              <Table.Row key={index}>
                 {(columnKey) => (
-                  <Table.Cell>
+                  <Table.Cell key={columnKey}>
                     {renderHomeTableCell(task, columnKey)}
                   </Table.Cell>
                 )}

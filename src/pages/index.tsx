@@ -7,8 +7,6 @@ import { Grid } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ['latin'] })
 
-
-
 export default function Home() {
   return (
     <Grid.Container gap={1} justify="center">

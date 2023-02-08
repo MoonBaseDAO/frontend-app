@@ -1,5 +1,4 @@
-import { Avatar, Card, Container, Text } from "@nextui-org/react"
-import IconButton from "../icon-button"
+import { Avatar, Card, Container, Text, Button } from "@nextui-org/react"
 import { MoreIcon } from "../icons/more"
 
 export interface ScheduleCardProps {
@@ -18,9 +17,7 @@ const ScheduleCard = ({ startTime, endTime, title, users }: ScheduleCardProps) =
             <Text h6>{startTime} - {endTime}</Text>
             <Text h5>{title}</Text>
           </div>
-          <IconButton>
-            <MoreIcon />
-          </IconButton>
+          <Button auto light icon={<MoreIcon />} />
         </Container>
         <Container fluid css={{ paddingLeft: "$3" }}>
           <Avatar.Group>
