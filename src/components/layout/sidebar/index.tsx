@@ -22,7 +22,7 @@ const Sidebar = () => {
         <SidebarItem label="Meetings" icon={<MeetingIcon fill="currentColor" filled />} />
         <SidebarItem label="Trash" icon={<TrashIcon fill="currentColor" filled />} />
         <Spacer />
-        <SidebarItem label="My Org" icon={<MeetingIcon fill="currentColor" filled />} />
+        <SidebarItem label="My Org" icon={<MeetingIcon fill="currentColor" filled />} link="/myorg" />
         <SidebarItem label="Discover" icon={<SunIcon fill="currentColor" filled />} />
         <SidebarItem label="Bounties" icon={<WaterIcon fill="currentColor" filled />} />
         <SidebarItem label="Chat" icon={<BadgeIcon fill="currentColor" filled />} />
