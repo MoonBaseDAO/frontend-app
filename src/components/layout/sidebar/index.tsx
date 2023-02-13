@@ -22,10 +22,10 @@ const Sidebar = () => {
         <SidebarItem label="Meetings" icon={<MeetingIcon fill="currentColor" filled />} />
         <SidebarItem label="Trash" icon={<TrashIcon fill="currentColor" filled />} />
         <Spacer />
-        <SidebarItem label="Family" icon={<MeetingIcon fill="currentColor" filled />} />
-        <SidebarItem label="Vacation" icon={<SunIcon fill="currentColor" filled />} />
-        <SidebarItem label="Festival" icon={<WaterIcon fill="currentColor" filled />} />
-        <SidebarItem label="Concerts" icon={<BadgeIcon fill="currentColor" filled />} />
+        <SidebarItem label="My Org" icon={<MeetingIcon fill="currentColor" filled />} />
+        <SidebarItem label="Discover" icon={<SunIcon fill="currentColor" filled />} />
+        <SidebarItem label="Bounties" icon={<WaterIcon fill="currentColor" filled />} />
+        <SidebarItem label="Chat" icon={<BadgeIcon fill="currentColor" filled />} />
       </Card.Body>
     </Card>
   );
