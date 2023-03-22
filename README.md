@@ -9,4 +9,12 @@ a web3 crm with focus on dao tooling
     yarn install 
     yarn dev
 ```    
+
+OR
+
+'''bash
+    pnpm install
+    pnpm run dev
+'''
+
 This will start the app at port ***localhost:3000***
